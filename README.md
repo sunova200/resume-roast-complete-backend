@@ -46,7 +46,7 @@
 ```mermaid
 graph TD
     subgraph Client["🌐 Client Layer"]
-        A[Frontend / Mobile App]
+        A[Frontend ]
     end
 
     subgraph Backend["⚙️ Backend Services"]
