@@ -1,0 +1,37 @@
+{
+    "name": "Python Dev Container",
+    // "dockerFile": "Dockerfile",
+    "dockerComposeFile":"docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "remoteUser": "root",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+        "ms-python.black-formatter",
+        "eamodio.gitlens",
+        "njpwerner.autodocstring",
+        "KevinRose.vsc-python-indent",
+        "esbenp.prettier-vscode",
+        "usernamehw.errorlens",
+        "tamasfe.even-better-toml",
+        "aaron-bond.better-comments",
+        "ms-azuretools.vscode-docker",
+        "ms-python.flake8",
+        "ms-python.isort"
+
+            ]
+        },
+        "settings": {
+            "python.pythonPath": "/usr/local/bin/python",
+            "python.linting.enabled": true,
+            "python.linting.pylintEnabled": true,
+            "python.linting.pylintArgs": [
+                "--disable=C0114", // Disable missing module docstring
+                "--disable=C0115", // Disable missing class docstring
+                "--disable=C0116"  // Disable missing function docstring
+            ]
+        }
+    }
+}
