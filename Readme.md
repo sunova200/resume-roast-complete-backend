@@ -80,9 +80,6 @@ graph TD
     style Data fill:#e8f5e9,stroke:#388e3c
     style External fill:#fff3e0,stroke:#f57c00
 
-
----
-
 ## 🧰 Tech Stack
 
 | Category | Technology |
