@@ -43,7 +43,6 @@
 
 ## 🏗️ Architecture Diagram
 
-<pre>
 ```mermaid
 graph TD
     subgraph Client["🌐 Client Layer"]
@@ -51,15 +50,15 @@ graph TD
     end
 
     subgraph Backend["⚙️ Backend Services"]
-        B[FastAPI Server<br/>app/server.py]
-        C[File Parser<br/>utils/pdf_parser.py]
-        D[AI Service<br/>utils/groq_client.py]
-        E[Task Queue<br/>queue/worker.py]
+        B[FastAPI Server]
+        C[File Parser]
+        D[AI Service]
+        E[Task Queue]
     end
 
     subgraph Data["🗄️ Data Layer"]
-        F[(MongoDB<br/>resumes, feedback)]
-        G[(Valkey<br/>job queue, cache)]
+        F[(MongoDB)]
+        G[(Valkey)]
     end
 
     subgraph External["🌍 External APIs"]
@@ -80,10 +79,8 @@ graph TD
     style Backend fill:#e3f2fd,stroke:#1976d2
     style Data fill:#e8f5e9,stroke:#388e3c
     style External fill:#fff3e0,stroke:#f57c00
-```
-</pre>
 
-> 💡 *GitHub renders Mermaid diagrams natively in README files!*
+
 
 ---
 
